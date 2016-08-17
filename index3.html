@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script>
+
+            var c = function() {
+                        $(this).css("background-color", "lightgray");
+            };
+
+            var v = function() {
+                        $(this).css("background-color", "lightblue");
+            };
+
+            var d = function() {
+                        $(this).css("background-color", "yellow");
+            };
+
+            var x = function() {
+                $("p").on({
+                    mouseenter: c,  
+                    mouseleave: v, 
+                    click: d
+                });
+
+            };
+
+            $(document).ready(x);
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <p>Click or move the mouse pointer over this paragraph.</p>
+
+    </body>
+    
+</html>

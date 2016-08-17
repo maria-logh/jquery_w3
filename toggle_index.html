@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<script>
+
+			var HideShowParas = function() {
+			        $("p").toggle(1000);
+			    };
+
+			var f = function() {
+			    $("button").click(HideShowParas);
+			};
+
+			$(document).ready(f);
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<p>This is a paragraph with little content.</p>
+		<button>Hide/Show</button>
+
+	</body>
+
+</html>
+

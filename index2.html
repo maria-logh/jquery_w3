@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
+		<script>
+
+			var turnThisElementGrey = function() {
+        		$(this).css("background-color", "#cccccc");
+    		};
+
+    		var turnThisElementWhite = function() {
+        		$(this).css("background-color", "#ffffff");
+    		};
+
+			var onFocusTurnGreyOnBlurTurnWhite = function() {
+			    $("input").focus(turnThisElementGrey);
+			    $("input").blur(turnThisElementWhite);
+			};
+
+			$(document).ready(onFocusTurnGreyOnBlurTurnWhite);
+
+		</script>
+
+	</head>
+
+	<body>
+
+		Name: <input type="text" name="fullname">
+		<br>
+		Email: <input type="text" name="email">
+
+	</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+
+	<head>
+
+		<title></title>
+
+		<style>
+
+			p {
+				margin: 0;
+			}
+				
+			.container {
+				display: flex;
+				flex-wrap: wrap;
+				background-color: grey;
+			}
+
+			.item {
+				text-align: justify;
+				flex: 1;
+				padding: 20px;
+				/*justify-content: center;*/
+				background-color: lightblue;
+				margin: 15px;
+			}
+
+			.item2 {
+				text-align: justify;
+				flex: 0 1 auto;
+				padding: 20px;
+				/*justify-content: center;*/
+				background-color: lightblue;
+				margin: 15px;
+			}
+
+			.item-p {
+				display: none;
+			}
+
+			.more-button {
+				display: inline-block;
+			}
+
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<script>
+
+			var h = function(){
+			        $(this).parent().find("p.item-p").toggle(1000);
+			    };
+
+			var f = function(){
+			    $("button").click(h);
+			};
+
+			$(document).ready(f);
+
+</script>
+
+	</head>
+
+
+	<body>
+
+		<div class="container">
+			
+			<div class="item">
+				<p>
+					We have been helping organisations get the most from their IT equipment and to improve their computer skills since 1994. We have grown because we value long term customer relationships over the profit centred approach.
+				</p>
+				<p class="item-p">
+					We have been helping organisations get the most from their IT equipment and to improve their computer skills since 1994. We have grown because we value long term customer relationships over the profit centred approach.
+				</p>
+				<button>MORE/LESS</button>
+			</div>
+
+			<div class="item2">
+				<p>
+					With jQuery, you can toggle between the hide() and show() methods with the toggle() method. With jQuery, you can toggle between the hide() and show() methods with the toggle() method.
+				</p>
+				<p class="item-p">
+					We have been helping organisations get the most from their IT equipment and to improve their computer skills since 1994. We have grown because we value long term customer relationships over the profit centred approach.
+				</p>
+				<button>MORE/LESS</button>
+			</div>
+
+			<div class="item">
+				<p>
+					We have been helping organisations get the most from their IT equipment and to improve their computer skills since 1994. We have grown because we value long term customer relationships over the profit centred approach.
+				</p>
+				<p class="item-p">
+					We have been helping organisations get the most from their IT equipment and to improve their computer skills since 1994. We have grown because we value long term customer relationships over the profit centred approach.
+				</p>
+				<button>MORE/LESS</button>
+			</div>
+
+			<div class="item">
+				<p>
+					We have been helping organisations get the most from their IT equipment and to improve their computer skills since 1994. We have grown because we value long term customer relationships over the profit centred approach.
+				</p>
+				<p class="item-p">
+					We have been helping organisations get the most from their IT equipment and to improve their computer skills since 1994. We have grown because we value long term customer relationships over the profit centred approach.
+				</p>
+				<button>MORE/LESS</button>
+			</div>
+
+			<div class="item">
+				<p>
+					We have been helping organisations get the most from their IT equipment and to improve their computer skills since 1994. We have grown because we value long term customer relationships over the profit centred approach.
+				</p>
+				<p class="item-p">
+					We have been helping organisations get the most from their IT equipment and to improve their computer skills since 1994. We have grown because we value long term customer relationships over the profit centred approach.
+				</p>
+				<button>MORE/LESS</button>
+			</div>
+
+		</div>
+
+	</body>
+
+
+</html>

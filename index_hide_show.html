@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<script>
+
+				var g = function() {
+				        $("p").hide(1000);
+				};
+
+				var h = function() {
+				        $("p").show();
+				};
+
+				var f = function() {
+				    $("#hide").click(g);
+				    $("#show").click(h);
+				};
+
+				$(document).ready(f);
+
+		</script>
+		
+	</head>
+
+	<body>
+
+		<p>If you click on the "Hide" button, I will disappear.</p>
+
+		<button id="hide">Hide</button>
+		<button id="show">Show</button>
+
+	</body>
+
+</html>

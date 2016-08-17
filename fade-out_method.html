@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
+		<script>
+
+			var h = function() {
+			        $("#div1").fadeOut();
+			        $("#div2").fadeOut("slow");
+			        $("#div3").fadeOut(3000);
+			    };
+
+			var f = function() {
+			    $("button").click(h);
+			};
+
+			$(document).ready(f);
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<button>Click to fade out boxes</button>
+
+		<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+		<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+		<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+	</body>
+
+</html>
+

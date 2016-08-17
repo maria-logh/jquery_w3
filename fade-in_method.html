@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<script>
+
+			var v = function() {
+			        $("#div1").fadeIn();
+			        $("#div2").fadeIn("slow");
+			        $("#div3").fadeIn(3000);
+			    };
+
+			var f = function() {
+			    $("button").click(v);
+			};
+
+			$(document).ready(f);
+
+		</script>
+
+	</head>
+
+
+	<body>
+
+		<button>Click to fade in boxes!</button>
+
+		<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+		<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+		<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+	</body>
+
+</html>
+

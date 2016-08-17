@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
+		<script>
+
+			var f = function() {
+			        $(this).hide();
+			};
+
+			var x = function() {
+			    $("p").on("click", f);
+			};
+
+			$(document).ready(x);
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<p>If you click on me, I will disappear.</p>
+		<p>Click me away!</p>
+		<p>Click me too!</p>
+
+	</body>
+
+</html>
